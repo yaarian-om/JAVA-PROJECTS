@@ -1,0 +1,10 @@
+//import My_Package.ClassName;
+import My_Package.*; // * means all
+public class Package_Demo{
+    public static void main(String[] args) {
+        ClassName cn = new ClassName();
+        System.out.println("Setting Object");
+        cn.setObject("This Is An OBJECT");
+        System.out.println("Getting Object = "+cn.getObject());
+    }
+}

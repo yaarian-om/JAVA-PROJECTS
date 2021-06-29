@@ -1,0 +1,43 @@
+A software for School Management
+
+1st page :
+Add Student
+search Student
+remove Student
+show all Student
+search teacher
+show all teacher
+
+for add Student
+input name
+input parents name
+input address
+input class
+input sec
+input birth date/month/year
+input unique S_iD
+wanna back?
+
+for add teacher
+input name
+input phone
+input address
+input post
+input salary
+unique T_id
+
+for search/remove
+input name
+input catagory
+input unique ID
+wanna back?
+
+add money
+input holder name
+input catagory
+input unique number
+show total money
+wanna back?
+
+show all info
+teacher/ student all info

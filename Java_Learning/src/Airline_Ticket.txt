@@ -1,0 +1,37 @@
+A software that takes all inputs that is needed
+to generate a ticket for Air_Bangla Airlines
+
+The functions to be included that
+1st page :
+input date
+input member_number
+
+2nd page :
+show available places
+input/choice Start_Point
+show available places
+input/choice Destination
+show available Plane
+choice plane
+wanna Back?
+
+3rd Page : 
+show available seats
+choice seats for members
+wanna Back?
+
+4th page :
+show cash amount
+choice payment option
+input number
+input pin
+wanna Back?
+
+5th page :
+input Passport number
+input all the necessary items along with this
+wanna Back?
+
+6th page :
+Print all the items that is necessary for an air ticket
+print the seat with the position marked

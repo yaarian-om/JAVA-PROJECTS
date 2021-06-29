@@ -1,0 +1,27 @@
+A software that takes all inputs that is needed
+to Calculator an Electricity Bill for Customer
+The functions to be included that
+
+1st page :
+input a bill
+search a bill
+show all bills
+
+for input
+input name
+input house_no
+input flat no
+wanna back?
+
+for each bills
+input watt cost per hour
+input total days
+wanna Back?
+
+for search
+input house no
+input flat no
+show bill
+wanna back?
+
+show all Bills

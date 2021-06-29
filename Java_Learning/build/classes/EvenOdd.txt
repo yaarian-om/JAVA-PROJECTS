@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+public class EvenOdd__Class__19 
+{
+    public static void main(String[] args) 
+    {
+        Scanner input = new Scanner(System.in);
+        int x,x1;
+        System.out.print("Enter any Integer : ");
+        x = input.nextInt();
+        
+        // USING if, inside of if
+        {
+        if(x!=0)
+        {
+            if(x%2==0)
+            {
+                System.out.println(x+" is Even");
+            }
+            else
+            {
+                System.out.println(x+" is Odd");
+            }
+        }
+        else 
+        {
+            System.out.println("Your inserted value is 0");
+        }
+        
+        }
+    }
+}

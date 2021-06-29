@@ -1,0 +1,29 @@
+File io:
+The File class from the java.io package, allows us to work with files.
+To use the File class, create an object of the class, and specify the filename or directory name:
+import java.io.File;  // Import the File class
+File myObj = new File("filename.txt"); // Specify the filename
+
+#Methods of File Class;
+canRead(),canWrite(),createNewFile(),delete(),exists(),getName(),
+getAbsolutePath(),length(),list(),mkdir().
+
+#Creating file:
+To create a file in Java, you can use the createNewFile() method. 
+This method returns a boolean value: true if the file was successfully created, 
+and false if the file already exists. 
+The method is enclosed in a try...catch block. 
+This is necessary because it throws an IOException if an error occurs 
+(if the file cannot be created for some reason).
+File myObj = newFile("C:\\Users\\MyName\\filename.txt");
+
+#Writing in File:
+We use the FileWriter class together with its write() 
+method to write some text to the file we created. 
+Note that when you are done writing to the file, 
+you should close it with the close() method.
+
+#Reading from File:
+We create object of FileReader class to read some text from a file we created. 
+We create BufferedReader object using the FileReader class object to read the file content.
+Note that when you are done reading to the file, you should close it with the close() method

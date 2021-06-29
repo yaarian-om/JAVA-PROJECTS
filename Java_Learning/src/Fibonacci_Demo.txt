@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Fibonacci_Demo 
+{
+    public static void main(String[] args) 
+    {
+     Scanner input = new Scanner (System.in);   
+    
+        System.out.print("Enter The how many numbers you want : ");
+        int n = input.nextInt();
+        n = n-2;
+        
+        System.out.print("Fibonacci series is =  0 ");
+        int first=0,second=1, third=0;
+        for (int i = 0; i < n; i++) 
+        {
+         
+            third = first + second;
+            first = second;
+            second =  third;
+            System.out.print(third+" ");
+            
+        }
+    
+    
+    
+    
+    
+    
+    }
+   
+}

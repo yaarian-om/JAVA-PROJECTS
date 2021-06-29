@@ -1,0 +1,29 @@
+A software for Library Management
+
+1st page :
+reader info
+show all available book list
+search a book
+add a book
+
+for reader
+reader name
+address
+number of books
+book unique number
+
+for add
+input name
+input catagory
+input shelf no
+input writer
+book unique number
+wanna back?
+
+for search
+input book name
+input catagory
+input writer
+wanna back?
+
+show all info doc/patient

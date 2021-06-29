@@ -1,0 +1,35 @@
+Array definition:
+An array refers to a data structure that contains homogeneous elements. 
+This means that all the elements in the array are of the same data type.
+Types of array:
+1.One-dimensional Array
+2.Two-dimensional Array
+3.Multi-dimensional Array
+ 
+Array declaration:
+Declaring an array which holds elements of integer type:
+
+1.1-D array:
+int arr1[]= new int[]
+or,
+int []arr1= new int[]
+
+2.2-D array:
+int [ ]arr2;
+.
+.
+.
+arr2 = new int [size];
+
+3.Multidimensional Array:
+int aiMdArray[][]=new int [2][];
+
+array initialization:
+intArray[0]=1; // Assigns an integer value 1 to the first element 0 of the array
+
+intArray[1]=2; // Assigns an integer value 2 to the second element 1 of the array
+
+arrray sysnatax:
+<elementType>[] <arrayName>;
+or,
+<elementType> <arrayName>[];

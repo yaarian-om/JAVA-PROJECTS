@@ -1,0 +1,14 @@
+Association:
+In this article we will discuss Association in Java. 
+Association establishes relationship between two separate classes through their objects. 
+The relationship can be one to one, One to many, many to one and many to many.
+
+A person can have only one passport. That is a one-to-one association.
+        Person(1)------(1)Passport
+If we talk about the association between a Bank and Employee, 
+a bank can have many employees, So it is a one-to-many relationship.
+        Bank(1)-------(1-n)Employee
+If we talk about the association of a classroom, 
+for many students there is one teacher. 
+So it is a many-to-one relationship.
+        Student(1-n)------Teacher

@@ -1,0 +1,68 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ArrayLists_Demo {
+    public static void main(String[] args) {
+        //******************* Introduction to ArrayList ************************
+        Scanner input = new Scanner(System.in);
+        /// Declaring ArrayList
+        ArrayList<Integer> number = new ArrayList<>();
+        System.out.println("Size = " + number.size());
+        // Adding Values
+        number.add(10);
+        number.add(20);
+        number.add(30);
+        number.add(3, 40);
+        System.out.println(number); // Horizontal Print
+        for (int x : number) /*Vertical Print*/ {
+            System.out.println(x);
+        }
+        System.out.println("Size = " + number.size());
+        number.remove(2);
+        System.out.println("After Removing = " + number);
+        number.clear();
+        System.out.println(" after removig all : " + number);
+        boolean b = number.isEmpty(); // returns true if vairable is empty
+        System.out.println("Empty = " + b);
+        boolean b1 = number.contains(30);/* Checks that an emlements is present 
+                                            in that or not if presents
+                                            then returns TRUE */
+        System.out.println("Elements Present = " + b1);
+        int i = number.indexOf(40);/* shows the index of an elements
+                                       if not present it shows -1*/
+        System.out.println("Index of the element = " + i);
+        number.removeAll(number);
+        System.out.println(" after removig all : "+number);
+        
+        //********************* Sorting ArrayList ******************************
+        /// Declaring ArrayList
+        ArrayList<Integer> numberss = new ArrayList<>();
+        System.out.println("Size = " + number.size());
+        // Adding Values
+        numberss.add(10);
+        numberss.add(20);
+        numberss.add(30);
+        numberss.add(3, 40);
+        System.out.println(numberss); // Horizontal Print
+        for (int x : numberss) /*Vertical Print*/ {
+            System.out.println(x);
+        }
+        System.out.println("Size = " + numberss.size());
+        numberss.remove(2);
+        System.out.println("After Removing = " + number);
+        numberss.clear();
+        System.out.println(" after removig all : " + number);
+        boolean flag = numberss.isEmpty(); // returns true if vairable is empty
+        System.out.println("Empty = " + flag);
+        boolean flag2 = numberss.contains(30);/* Checks that an emlements is present 
+                                            in that or not if presents
+                         s                   then returns TRUE */
+        System.out.println("Elements Present = " + flag2);
+        int integer = numberss.indexOf(40);/* shows the index of an elements
+                                       if not present it shows -1*/
+        System.out.println("Index of the element = " + integer);
+        number.removeAll(numberss);
+        System.out.println(" after removig all : "+numberss);
+
+    }
+}

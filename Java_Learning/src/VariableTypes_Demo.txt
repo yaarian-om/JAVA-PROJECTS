@@ -1,0 +1,17 @@
+public class VariableTypes_Demo{
+    static int flag; // Static Variable
+    public void variableTypes(double tax /* Here Tax is also a Local variable*/){
+        
+        String month = "JANUARY"; // Instance Variable
+        if(month.contains("JANUARY")){
+            int salary = 90000 ; // Local variable
+            flag++;
+            System.out.println("Done");
+        }
+    }
+    
+    public static void main(String[] args) {
+        VariableTypes_Demot = new VariableTypes_Demo();
+        t.variableTypes(5.2);   
+    }
+}

@@ -1,0 +1,62 @@
+class Encapsulation{
+    
+   private String name;
+   private String id;
+   private int age;
+   
+    Encapsulation()
+    {
+        System.out.println("Default constructor");
+    }
+    
+    //constructor
+    Encapsulation(String name, String id, int age)
+    {
+        this.name = name;
+        this.id = id;
+        this.age = age;
+        
+    }
+    //get and set method
+   public void setName(String name) 
+    {
+      this.name = name;
+    }
+
+   public void setIdNum( String id) 
+    {
+      this.id = id;
+    }
+   public void setAge( int age) 
+    {
+      this.age = age;
+    }
+   
+    public String getName()
+    {
+      return name;
+    }
+   public String getIdNum()
+    {
+      return id;
+    }
+   public int getAge() 
+    {
+      return age;
+    }
+}
+
+   //main method
+   public class Encapsulation_Demo
+   {
+       public static void main(String[] args) {
+           
+           Encapsulation demo= new Encapsulation();
+           demo.setName("Samiya");
+           demo.setIdNum("20-346789-2");
+           demo.setAge(20);
+           System.out.println("Name= "+demo.getName());
+           System.out.println("ID= "+demo.getIdNum());
+           System.out.println("Age= "+demo.getAge());
+       }
+   }

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class ForEachLoop {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // For Each Loop is Basically used with array and the job is same
+        // The limit of this loop is the size of that array
+        
+        // create an array
+        int[] numbers = {3, 9, 5, -5};
+
+        // for each loop 
+        for (int number: numbers) {
+        System.out.println(number);
+        }
+        
+    }
+}

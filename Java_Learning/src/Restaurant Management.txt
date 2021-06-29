@@ -1,0 +1,23 @@
+A software for Online Restaurant Management
+
+1st page :
+show all food
+enter choice
+enter number of plates
+
+2nd page
+customer name
+billing address
+home dalivery?
+wanna Back?
+
+3rd page
+Payment options
+Cost show
+bkash rocket credit, cash on Delivery
+phone number(Bkash/Rocket/CoD)
+pin (If needed)
+wanna back?
+
+Show Full Bill 
+Cash memo

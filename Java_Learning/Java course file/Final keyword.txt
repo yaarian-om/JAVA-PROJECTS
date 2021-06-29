@@ -1,0 +1,20 @@
+Final Atribute,method & class:
+The final keyword in java is used to restrict the user. 
+The java final keyword can be used in many context.
+Final can be:
+1.variable
+2.method
+3.class
+
+1)final variable:
+If you make any variable as final, you cannot change the 
+value of final variable(It will be constant).
+2) Java final method
+If you make any method as final, you cannot override it.
+3) Java final class
+If you make any class as final, you cannot extend it.
+
+Java final keyword:
+->Stop value change
+->Stop method overriding
+->Stop inheritance

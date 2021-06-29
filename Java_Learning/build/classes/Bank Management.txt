@@ -1,0 +1,34 @@
+A software for Bank Management
+
+1st page :
+Add account
+search account
+remove account
+show all account
+add money
+
+for add
+input name
+input catagory
+input unique acc No
+input deposit amount
+book unique number
+wanna back?
+
+for search/remove
+input holder name
+input catagory
+input unique number
+wanna back?
+
+add money
+input holder name
+input catagory
+input unique number
+show total money
+wanna back?
+
+show all info
+show all account with...
+total money, create date, how many years passed
+of each account

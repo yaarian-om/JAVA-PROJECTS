@@ -1,0 +1,12 @@
+Static block:
+When a block is declared with the static keyword, it is called static block in Java. 
+It is a normal block of code that is enclosed in braces ({ }) and is preceded by a keyword “static”.
+
+Static block is also known as static initialization block or static initializer block in Java.
+
+Syntax:
+The static block gets executed only once by JVM when the class is loaded into the memory by Java ClassLoader. 
+The syntax to declare static block in Java program is as follows:
+static {
+   // Logic here or Java code.
+ }

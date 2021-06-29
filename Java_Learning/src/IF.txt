@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class IF {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // Switch is used to execute individual part of any list
+        
+        int x = 10;
+        int y = 20;
+        
+        
+        if(x>y){
+            System.out.println(x+" is Greater");
+        }else{
+            System.out.println(y+" is Greater");
+        }
+        
+        
+    }
+}

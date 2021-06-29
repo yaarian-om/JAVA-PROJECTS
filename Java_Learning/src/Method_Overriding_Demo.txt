@@ -1,0 +1,25 @@
+class parent{
+    public void display(){
+        System.out.println("Parent Call");
+    }
+}
+
+class Child extends parent{
+   @Override
+   public void display(){
+        System.out.println("Child Call");
+    }
+}
+
+public class Method_Overriding_Demo{
+    public static void main(String[] args) {
+       parent p1 = new parent();
+       Child c1 = new Child();
+       /* 
+       Display method is same both place
+       But Works different ways based on object
+       */
+       p1.display(); 
+       c1.display();
+    }
+}

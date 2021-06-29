@@ -1,0 +1,14 @@
+
+class className{
+        public void display(){
+            System.out.println("Inside className Class and Display method");
+        }
+}
+
+public class Class_Demo2 {
+    public static void main(String[] args) {
+        className cn ; // Object Declaration
+        cn = new className(); // Object Initialization
+        cn.display();
+    }
+}

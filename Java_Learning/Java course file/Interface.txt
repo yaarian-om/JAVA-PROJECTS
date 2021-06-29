@@ -1,0 +1,35 @@
+Interface:
+1.An interface may have attributes. But these attributes are by default public, 
+static and final all at the same time.
+2.An interface does not have any constructors.
+3.All the methods of an interface are by default public and abstract.
+4.As all the methods are by default abstract, 
+they do not have any body/implementations.
+5.If we want to give body to any method of an interface, 
+we have to declare the method as static.
+6.The keyword interface is used to denote interface.
+7.A Regular/Non-Abstract class can inherit more than one interface.
+8.An abstract class can inherit more than one interface.
+9.An interface can inherit more than one interface.
+So, in terms of Interface, Multiple Inheritance is possible.
+
+Syntax :
+interface <interface_name> {
+    
+    // declare constant fields
+    // declare methods that abstract 
+    // by default.
+}
+
+Why use Java interface?
+1.There are mainly three reasons to use interface. They are given below.
+2.It is used to achieve abstraction.
+3.By interface, we can support the functionality of multiple inheritance.
+4.It can be used to achieve loose coupling.
+
+The relationship between classes and interfaces:
+class-----(extends)--------class
+interface------(extends)------interface
+interface------(implements)--------class
+
+

@@ -1,0 +1,64 @@
+
+class Person{
+    private String name;
+    Account acc;
+    public void setAccount(Account a){
+         acc = a;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Account getAcc() {
+        return acc;
+    }
+
+    public void setAcc(Account acc) {
+        this.acc = acc;
+    }
+    public void display(){
+        System.out.println("Person Name = "+getName());
+        System.out.println("Account Type = "+acc.getAccName());
+        System.out.println("Account Number = "+acc.getAccNo());
+        
+    }
+}
+
+class Account{
+       private String accName;
+       private String accNo;
+
+    public void setAccName(String accName) {
+        this.accName = accName;
+    }
+
+    public String getAccName() {
+        return accName;
+    }
+
+    public String getAccNo() {
+        return accNo;
+    }
+
+    public void setAccNo(String accNo) {
+        this.accNo = accNo;
+    }
+}
+
+public class Association_Demo{
+    public static void main(String[] args) {
+       Person p = new Person();
+       Account a = new Account();
+       a.setAccName("Deposit");
+       a.setAccNo("101");
+       p.setName("Yaarain");
+       p.setAccount(a);
+       p.display();
+        
+    }
+}

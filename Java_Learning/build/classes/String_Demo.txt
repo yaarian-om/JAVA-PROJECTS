@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class String_Demo {
+    public static void main(String[] args) {
+      
+        // in the same pool
+        String name1 = "Yaarian";
+        String name2 = "Yaarian";
+        /*
+           Here name1 and name2 has the same string
+           So, they will be stored in the same place
+           automatically by JVM. 
+           It means their Memory Location is same
+        */
+        
+        // Here == compares their locations
+        if(name1 == name2){System.out.println("Memory Location same");} // ans true
+        else{System.out.println("Memory Location is not same");} 
+        
+        String title1 = new String("Roy");
+        String title2 = new String("Roy");
+        /*
+           Here title1 and title2 has the same string
+           but, they will be stored in the same place
+           automatically by JVM. 
+           It means their Memory Location is different
+        */
+        if(title1 == title2){System.out.println("Memory Location same");}
+        else{System.out.println("Memory Location is not same");} //ans false
+        
+        // Here (string1.contains(string2)) Compares the actual contents inside the variable
+        if(title1.contains(title2) || name1.contains(name2)){System.out.println("Strings are Same");}
+        else{System.out.println("Strings are not Same");}
+        
+        
+    }
+}

@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+public class Scanner_Demo {
+    public static void main(String[] args) {
+      
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter Name : ");
+        String name = input.nextLine();
+        System.out.print("Enter Age : ");
+        int age = input.nextInt();
+        System.out.print("Enter money : ");
+        double money = input.nextDouble();
+        System.out.print("Enter Interest Rate(%): ");
+        float rate = input.nextFloat();
+        
+        System.out.println("\n\nEntered Name = "+name);
+        System.out.println("Entered Age = "+age);
+        System.out.println("Entered Money = "+money);
+        System.out.println("Entered Interest Rate = "+rate);
+        
+        
+    }
+}

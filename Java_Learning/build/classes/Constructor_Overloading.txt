@@ -1,0 +1,20 @@
+public class Constructor_Overloading{
+
+    public Constructor_Overloading() {
+        System.out.println("Empty Constructor");
+        System.out.println("No Perameter");
+    }
+    public Constructor_Overloading(int x){
+        System.out.println("parametrized Constructor");
+        System.out.println("parameter Entered = "+x);
+    }
+    
+    
+    
+    public static void main(String[] args) {
+       Constructor_Overloading co1 = new Constructor_Overloading();
+        System.out.println();
+       Constructor_Overloading co2 = new Constructor_Overloading(1);
+       
+    }
+}

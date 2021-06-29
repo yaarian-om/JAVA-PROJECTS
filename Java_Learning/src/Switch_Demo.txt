@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Switch_Demo{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // Switch is used to execute individual part of any list
+        System.out.println("1. Login");
+        System.out.println("2. Registration");
+        System.out.println("3. Sign-up");
+        System.out.println("4. Facebook");
+        System.out.println("5. Instragram");
+        System.out.println("6. Twitter");
+        System.out.print("Enter Your Choice : ");
+        int n = input.nextInt();
+        switch(n){
+            case 1:{
+                System.out.println("Welcome to Login");
+                break;
+            }
+            case 2:{
+                System.out.println("Welcome to Registration");
+                break;
+            }
+            case 3:{
+                System.out.println("Welcome to Sign-up");
+                break;
+            }
+            case 4:{
+                System.out.println("Welcome to Facebook");
+                break;
+            }
+            case 5:{
+                System.out.println("Welcome to Instragram");
+                break;
+            }
+            case 6:{
+                System.out.println("Welcome to Twitter");
+                break;
+            }
+            
+        }
+        
+    }
+}

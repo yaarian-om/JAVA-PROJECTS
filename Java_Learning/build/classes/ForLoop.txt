@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class ForLoop {  
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // Loop is Basically used to Do a same work repeatedly
+        System.out.print("Enter How many times to repeat : ");
+        int n = input.nextInt();
+        input.nextLine();
+        System.out.print("Enter The Line to repeat : ");
+        String line = input.nextLine();
+        for (int i = 0; i < n; i++) {
+            System.out.println(line);
+        }
+    }
+}

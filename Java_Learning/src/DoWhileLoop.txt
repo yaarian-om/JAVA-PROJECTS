@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class DoWhileLoop {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // Do While Loop is Basically used with Conditions and the job is same
+        // It runs 1 time independently while condition is always false
+        // The limit of the loop is when the Condiotion get False
+        int flag = 0;
+        do{
+            System.out.println("While Loop Demo");
+            flag++;
+        }while(flag < 5);
+        
+        // Example 2
+        do{
+            System.out.println("\n\nWhile Loop Demo");
+            flag++;
+        }while(false);
+        
+    }
+}

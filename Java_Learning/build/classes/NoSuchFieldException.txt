@@ -1,0 +1,17 @@
+public class NoSuchFieldException {
+	public static void public static void main(String[] args) {
+		
+	
+    try {
+      Field field = clazz.getDeclaredField(name);
+      if (!field.isAccessible()) {
+        field.setAccessible(true);
+      }
+      return field;
+    } catch (NoSuchFieldException e) {
+      // ignore and search next
+      System.out.println(e);
+    }
+    
+  }
+}

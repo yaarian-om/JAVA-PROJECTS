@@ -1,0 +1,10 @@
+public class Final_Method{
+    
+    final void display(){
+        System.out.println("Inside Final Method");
+    }
+    public static void main(String[] args) {
+       Final_Method myObj = new Final_Method();
+       myObj.display();
+    }
+}

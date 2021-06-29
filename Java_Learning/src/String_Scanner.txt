@@ -1,0 +1,30 @@
+String:
+Strings, which are widely used in Java programming, are a sequence of characters. 
+In Java programming language, strings are treated as objects.
+The Java platform provides the String class to create and manipulate strings. 
+The String class has many methods. The most used are:
+length() - returns the number of characters in the String.
+charAt() - returns the character at the specified index.
+equals() - returns true if two strings have equal contents.
+compareTo() -returns 0 if equal, Less than zero – if the invoking String is "less than” the other,  
+Greater than zero - if the invoking String is "greater than" the other.
+indexOf() - returns the index of specified String or character.
+substring() -returns a portion of the String's text.
+toUpperCase(), toLowerCase() - converts the String to upper- or lower-case characters.
+
+Scanner:
+Java provides various ways to read input from the keyboard 
+The Scanner class is used to get user input
+it is found in the java.util package
+By the help of Scanner in Java, 
+we can get input from the user in primitive types such as int, long, double, byte, float, short, etc.
+To use the Scanner class, create an object of the class and use any of the available 
+methods found in the Scanner class documentation.
+
+Java Scanner Class Declaration:
+public final class Scanner  
+          extends Object  
+          implements Iterator<String>
+
+How to get Java Scanner:
+Scanner in = new Scanner(System.in);  

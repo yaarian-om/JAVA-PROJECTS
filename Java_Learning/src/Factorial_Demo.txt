@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Factorial_Demo 
+{
+    public static void main(String[] args) 
+    {
+        Scanner input = new Scanner(System.in);
+        int sum=1;
+        System.out.print("Enter the number to make factorial : ");
+        int n = input.nextInt();
+        System.out.print("The Series is : ");
+        for(int i=1;i<=n;i= i+1)
+        {
+            
+            sum = sum *i;
+            System.out.print(i+"*");
+            
+        }
+        
+        /*(\b=backspace) 
+        it ensures that 
+        the star sign 
+        isn't going to apprear 
+        at the end of printing
+        series*/
+
+        System.out.println("\b");    
+        System.out.println("Sum of that Linear Series = "+sum);
+        
+    }
+}

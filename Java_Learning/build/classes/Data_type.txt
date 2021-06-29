@@ -1,0 +1,18 @@
+
+import java.util.Scanner;
+public class Data_type {
+    public static void main(String[] args) {
+      
+        String name = "Yaarian Roy (Om)";
+        int age = 23;
+        double money = 500000000;
+        float rate = 5f; // to convert in float we need to put "f" at the end
+        
+        System.out.println("String Name = "+name);
+        System.out.println("int Age = "+age);
+        System.out.println("double Money = "+money);
+        System.out.println("float Rate = "+rate);
+        
+        
+    }
+}

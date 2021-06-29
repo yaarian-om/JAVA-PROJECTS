@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class IFelse {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // Switch is used to execute individual part of any list
+        
+        int x = 10;
+        int y = 20;
+        int z = 30;
+        
+        
+        if(x>y && x>z){
+            System.out.println(x+" is Greater");
+        }else if(y>x && y>z){
+            System.out.println(y+" is Greater");
+        }else{
+            System.out.println(z+" is Greater");
+        }
+        
+        
+    }
+}

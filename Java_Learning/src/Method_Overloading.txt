@@ -1,0 +1,31 @@
+public class Method_Overloading{
+    public int add(int x,int y){
+        System.out.println("int x, int y");
+        return x+y;
+    }
+    public int add(double x,int y){
+        System.out.println("double x, int y");
+        return (int)x+y;
+    }
+    public int add(int x,double y){
+        System.out.println("int x, double y");
+        return x+(int)y;
+    }
+    public int add(double x,double y){
+        System.out.println("double x, double y");
+        return (int)x+(int)y;
+    }
+     public int add(int x,int y,int z){
+        System.out.println("int x, int y, int z");
+        return x+y+z;
+    }
+    
+    public static void main(String[] args) {
+       Method_Overloading t = new Method_Overloading();
+       t.add(2, 3);
+       t.add(2.0, 3);
+       t.add(2, 3.0);
+       t.add(2.5, 3.5);
+       t.add(2, 3, 4);
+    }
+}

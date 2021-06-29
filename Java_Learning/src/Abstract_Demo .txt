@@ -1,0 +1,110 @@
+abstract class Shape {
+    private double dim1,dim2;
+    public Shape(double dim1,double dim2)
+    {
+        this.dim1=dim1;
+        this.dim2=dim2;
+    }
+    public double getDim1()
+    {
+        return dim1;
+    }
+    public double getDim2()
+    {
+        return dim2;
+    }
+    public abstract void displayArea();  
+}
+class Circle extends Shape{
+    private double radius;
+    public Circle(double radius)
+    {
+        super(radius,radius);
+        this.radius=radius;
+    }
+    public void setRadius(double radius)
+    {
+        this.radius=radius;
+    }
+    public double getRadius()
+    {
+        return radius;
+    }
+    public void displayArea()
+    {
+        double Result= 3.1416*radius*radius;
+        System.out.println("Circle Area= "+Result);
+    } 
+}
+class Rectangle extends Shape{
+    private double length,width;
+    public Rectangle(double length,double width)
+    {
+        super(length,width);
+        this.length=length;
+        this.width=width;
+    }
+    public void setLength(double length)
+    {
+        this.length=length;
+    }
+    public void setWeidth(double width)
+    {
+        this.width=width;
+    }
+    public double getLength()
+    {
+        return length;
+    }
+    public double getWidth()
+    {
+        return width;
+    }
+    public void displayArea()
+    {
+        double Result= length*width;
+        System.out.println("Rectangle Area= "+Result);
+    }   
+}
+class Triangle extends Shape {
+    private double base,height;
+    public Triangle(double base,double height)
+    {
+        super(base,height);
+        this.base=base;
+        this.height=height;
+    }
+    public void setBase(double base)
+    {
+        this.base=base;
+    }
+    public void setHeight(double height)
+    {
+        this.height=height;
+    }
+    public double getBase()
+    {
+        return base;
+    }
+    public double getHeight()
+    {
+        return height;
+    }
+    public void displayArea()
+    {
+        double Result= 0.5*base*height;
+        System.out.println("Triangle Area= "+Result);
+    }
+}
+public class Abstract_Demo {
+    
+    public static void main(String[] args) {
+    Shape shape;
+    shape =new Rectangle(10,20);
+    shape.displayArea();
+    shape =new Triangle(5,10);
+    shape.displayArea();
+    shape =new Circle(10);
+    shape.displayArea();
+    }
+}

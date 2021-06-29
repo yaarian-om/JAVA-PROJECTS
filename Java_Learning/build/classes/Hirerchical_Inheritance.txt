@@ -1,0 +1,54 @@
+class parent{
+    String name;
+    String age;
+    public void parent_Does(){
+        System.out.println("Do Job");
+        System.out.println("Do take care of us");
+    }
+    public void display(){
+        System.out.println("Name = "+name);
+        System.out.println("Age = "+age);
+    }
+}
+
+class Child1 extends parent{
+   
+    public void child_Does(){
+        System.out.println("Do Programming");
+        System.out.println("Do Study");
+    }
+}
+
+class Child2 extends parent{
+   
+    public void child_Does(){
+        System.out.println("Do Play Football");
+        System.out.println("Do Play Cricket");
+    }
+}
+
+public class Hirerchical_Inheritance{
+    public static void main(String[] args) {
+        parent p = new parent();
+        Child1 c1 = new Child1();
+        Child1 c2 = new Child1();
+        c1.name = "Yaarian Roy";
+        c1.age = "22";
+        System.out.println("Child 1 ********************");
+        c1.display();
+        c1.child_Does();
+        System.out.println("\n");
+        
+        System.out.println("Child 2 ********************");
+        c2.name = "Aditya Roy";
+        c2.age = "17";
+        c2.display();
+        c2.child_Does();
+        System.out.println("\n");
+        System.out.println("parent ********************");
+        p.name = "Sri_Santi Roy";
+        p.age = "48";
+        p.display();
+        p.parent_Does();
+    }
+}

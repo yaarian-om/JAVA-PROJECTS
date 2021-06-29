@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Multiplication_Table_of_P2 
+{
+    public static void main(String[] args) 
+    {
+        Scanner input = new Scanner(System.in);
+        int p,m,n;
+        /*
+        Starting point of
+        the series of
+        Multiplication Table
+        */
+        System.out.print("Enter the starting point : "); 
+        int start = input.nextInt();
+        /*
+        Ending point of
+        the series of
+        Multiplication Table
+        */
+        System.out.print("Enter the Ending point : ");
+        int end = input.nextInt();
+        /*
+        Starting point of
+        each and Single
+        Multiplication Table
+        */
+        System.out.print("Enter the 1st number of Multiplication table : ");
+        int m1 = input.nextInt();
+        /*
+        Ending point of
+        each and Single
+        Multiplication Table
+        */
+        System.out.print("Enter the last number of Multiplication table : ");
+        int n1 = input.nextInt();
+        
+        System.out.println("The Table is : \n");
+           
+        for(int i=start;i<=end;i= i+1)
+        {
+            for(int j=m1;j<=n1;j= j+1)
+        {
+            System.out.println(j+" X "+i+" = "+j*i);
+        }     
+            System.out.println("");
+            System.out.println("");        
+        }
+               
+    }
+}

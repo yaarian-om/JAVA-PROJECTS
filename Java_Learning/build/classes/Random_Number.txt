@@ -1,0 +1,24 @@
+import java.util.Random;
+
+public class Random_Number 
+{
+    public static void main(String[] args) 
+    {
+        Random rand = new Random();
+        // Process 1 (Hard Method)
+        System.out.println("process 1");
+        int randomNumber = rand.nextInt(10);
+        System.out.println("Ramdom Number(0 - 10) = "+randomNumber);
+        int randomNumber2 = rand.nextInt(50)+50;
+        System.out.println("Ramdom Number(50 - 100) = "+randomNumber2);
+        
+        // Process 2 (Easy Method)
+        System.out.println("process 2");
+        int randomNumber3 = (int) (Math.random()*10);
+        System.out.println("Random Number 3 (0 - 10) = "+randomNumber3);
+        int randomNumber4 = (int) (Math.random()*10)+40;
+        System.out.println("Random Number 4 (40 - 50) = "+randomNumber4);
+        System.out.println("Direct = "+(int) (Math.random()*9));
+        
+    } 
+}

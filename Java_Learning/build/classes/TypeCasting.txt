@@ -1,0 +1,17 @@
+
+import java.util.Scanner;
+public class TypeCasting {
+    public static void main(String[] args) {
+      int int_Money = 500;
+        System.out.println("int money = "+int_Money);
+        double double_Money = (double) int_Money;
+        System.out.println("double money = "+int_Money);
+        float float_Money = (float) double_Money;
+        System.out.println("float money = "+float_Money);
+        
+        float float_Rate = 5.5f;
+        System.out.println("float Rate = "+float_Rate);
+        int int_Rate = (int) float_Rate;
+        System.out.println("int Rate = "+int_Rate);
+    }
+}

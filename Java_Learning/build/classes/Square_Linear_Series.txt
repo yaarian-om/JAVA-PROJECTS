@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Square_Linear_Series2 
+{
+    public static void main(String[] args) 
+    {
+        Scanner input = new Scanner(System.in);
+        int sum=1;
+        System.out.print("Enter the First digit of the series : ");
+        int m = input.nextInt();
+        System.out.print("Enter the last digit of the series : ");
+        int n = input.nextInt();
+        System.out.print("The Series is : ");
+        for(int i=m;i<=n;i= i+1)
+        {
+            
+            sum = sum *i*i;
+            System.out.print(i*i+" ");
+            
+        }
+
+        System.out.println("");    
+        System.out.println("Sum of that Linear Series = "+sum);
+        
+    }
+}

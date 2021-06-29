@@ -1,0 +1,29 @@
+Polymorphism:
+The word polymorphism means having many forms. 
+In simple words, we can define polymorphism as the ability 
+of a message to be displayed in more than one form.
+polymorphism allows you to define one interface and have multiple implementations. 
+The word “poly” means many and “morphs” means forms, So it means many forms.
+
+In Java polymorphism is mainly divided into two types:
+1.Compile time Polymorphism
+2.Runtime Polymorphism
+
+Example of Polymorphism:
+1.Method Overloading.
+2.Method Overriding.
+3.Constructor Overloading.
+4.Polymorphic Behavior of Objects.
+
+Method Overloading:
+1.Methods MUST be in same class.
+2.Method Name MUST be same.
+3.Method Parameter MUST be different.
+4.Method Return Type may or may not be same.
+
+Method Overriding:
+Methods MUST be in two different classes.
+1.There MUST be inheritance between the two classes.
+2.Method Name MUST be same.
+3.Method Parameter MUST be same.
+4.Method Return Type MUST be same.

@@ -1,0 +1,91 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Array {
+
+    public static void main(String[] args) {
+
+        //******************* Introduction to array ****************************
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Array Range : ");
+        int n = input.nextInt();
+        int[] number = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.print("number[" + (i + 1) + "] = ");
+            number[i] = input.nextInt();
+        }
+        System.out.println("\nStored values : ");
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("number[" + (i + 1) + "] = " + number[i]);
+        }
+
+        
+        //************************** Array Pattern *****************************
+        System.out.print("Enter the number for pattern : ");
+        int m = input.nextInt();
+        int k = 0;
+        int[][] A = new int[m][];
+        // Setting Up columns 
+        for (int row = 0; row <= m - 1; row++) {
+            A[row] = new int[(row + 1)];
+        }
+        // Auto value Input
+        for (int row = 0; row <= m - 1; row++) {
+            for (int col = 0; col <= row; col++) {
+                A[row][col] = k;
+                k++;
+            }
+        }
+        // Showing Output
+        for (int row = 0; row <= m - 1; row++) {
+            for (int col = 0; col <= row; col++) {
+                System.out.print(A[row][col] + " ");
+            }
+            System.out.println("");
+        }
+        
+        
+        //******************* Finding sum and average **************************
+        float sum = 0, avg = 0;
+        System.out.print("Enter Range for sum and average : ");
+        int sizes = input.nextInt();
+        int[] numbers = new int[sizes];
+        for (int i = 0; i < n; i++) {
+            System.out.print("number[" + (i + 1) + "] = ");
+            number[i] = input.nextInt();
+            sum = sum + number[i];
+            avg = sum / number.length;
+        }
+        System.out.println("\n\nStored values : ");
+        for (int i = 0; i < n; i++) {
+            System.out.println("number[" + (i + 1) + "] = " + number[i]);
+        }
+        System.out.println("\nSum = " + sum);
+        System.out.println("Average = " + avg);
+        
+        
+        //******************* max,min & 2nd-max,2nd-min ************************
+        System.out.print("Enter the Range for ascending decending and"
+                + " max min and 2nd max min : ");
+        int arraySize = input.nextInt();
+        int[] arr = new int[arraySize];
+        for (int i = 0; i < n; i++) {
+            arr[i] = input.nextInt();
+        }
+        Arrays.sort(arr); //   Sorting array from low to High
+        System.out.println("Assending = ");
+        for (int i = 0; i <= n - 1; i++) {
+            System.out.println("" + arr[i]);
+        }
+        System.out.println("Desending = ");
+        for (int i = n - 1; i >= 0; i--) {
+            System.out.println("" + arr[i]);
+        }
+        System.out.println("Max = " + arr[n - 1]);
+        System.out.println("Min = " + arr[0]);
+        System.out.println("2ns Max = " + arr[n - 2]);
+        System.out.println("2nd Min = " + arr[1]);
+
+    }
+}

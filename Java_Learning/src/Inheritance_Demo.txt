@@ -1,0 +1,57 @@
+class Human
+{       
+    private String name;
+	private int age;
+	private double height;
+	
+	public Human()
+	{
+		System.out.println("Default Constructor of Human");
+	}
+	
+	public Human(String name,int age,double height)
+	{
+		this.name=name;
+		this.age=age;
+		this.height=height;
+	}
+	public void show()
+	{
+		System.out.println("Name: "+this.name);
+		System.out.println("Age: "+this.age);
+		System.out.println("height: "+this.height);
+	}	
+}
+class Student extends Human
+{
+    private String id;
+    private double cgpa;
+    
+    public Student()
+	{
+		System.out.println("Default Constructor of Student");
+	}
+    public Student(String name,int age,double height,String id,double cgpa)
+	{
+        super(name,age,height);
+		this.id=id;
+        this.cgpa=cgpa;
+	}
+    public void show()
+	{
+		System.out.println("-----Student Info-----" );
+		super.show();
+		System.out.println("ID: "+this.id);
+		System.out.println("CGPA: "+this.cgpa);
+    }
+}
+public class Inheritance_Demo
+{
+	public static void main(String[] args)
+	{
+		Human h1=new Human("Ms.Y",5,25);
+		h1.show();
+		Student s1=new Student("Mr. X",25,5.7,"11-2",3.5);
+		s1.show();
+	}
+}

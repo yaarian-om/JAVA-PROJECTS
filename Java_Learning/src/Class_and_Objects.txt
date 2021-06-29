@@ -1,0 +1,11 @@
+Class & Object:
+
+Object- Objects have states and behaviors. 
+Example: A dog has states - color, name, breed as well as 
+behaviors – wagging the tail, barking, eating. An object is an instance of a class.
+There are three steps when creating an object from a class −
+Declaration − A variable declaration with a variable name with an object type.
+Instantiation − The 'new' keyword is used to create the object.
+Initialization − The 'new' keyword is followed by a call to a constructor. This call initializes the new object.
+
+Class− A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.

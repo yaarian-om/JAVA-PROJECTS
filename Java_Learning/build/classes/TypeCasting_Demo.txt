@@ -1,0 +1,17 @@
+public class TypeCasting_Demo {
+    static int flag; // Static Variable
+    public void variableTypes(double tax /* Here Tax is also a Local variable*/){
+        
+        int int_Value = 500;
+        float float_Value = (float) int_Value;
+        double double_Value = (double) float_Value;
+        String string_Value = "1234";
+        int int_Value2 = Integer.parseInt(string_Value);
+        System.out.println("Done");
+    }
+    
+    public static void main(String[] args) {
+        TypeCasting_Demo t = new TypeCasting_Demo();
+        t.variableTypes(5.2);   
+    }
+}

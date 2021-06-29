@@ -1,0 +1,80 @@
+class GrandParent{
+    String name;
+    String age;
+    String home_Name;
+    public void grandParent_Does(){
+        System.out.println("Do Gossip");
+        System.out.println("Do make us laugh");
+        System.out.println("Do Love us");
+    }
+    public void display(){
+        System.out.println("Name = "+name);
+        System.out.println("Age = "+age);
+    }
+    public void grandParent_Have(){
+        System.out.println("Have Home = "+home_Name);
+    }
+}
+
+class Parent extends GrandParent{
+   String car_name;
+    public void parent_Does(){
+        System.out.println("Do Job");
+        System.out.println("Do take care of us");
+    }
+    public void parent_Have(){
+        System.out.println("Have Car = "+car_name);
+    }
+}
+
+class Child extends Parent{
+    String lives_In;
+    public void child_Does(){
+        System.out.println("Do Programming");
+        System.out.println("Do Study");
+    }
+    public void child_Have(){
+        System.out.println("Have City Name = "+lives_In);
+    }
+}
+
+public class Multi_Level_Inheritance{
+    public static void main(String[] args) {
+        GrandParent gp = new GrandParent();
+        Parent p = new Parent();
+        Child c = new Child();
+        /* 
+        The things that your grandparents have
+        Those all are yours.
+        The things that your parents have
+        Those all are also yours.
+        The things that you have
+        Those are also yours.
+        */
+        
+        gp.name = "Krishna Roy";
+        gp.age = "89";
+        gp.home_Name = "Santi_Nirr";
+        System.out.println("\nGrand Parent*****************\n");
+        gp.grandParent_Does();
+        gp.grandParent_Have();
+        
+        p.name = "Santi Roy";
+        p.age = "47";
+        p.car_name = "Nissan Sentra SR 2020";
+        System.out.println("\nParent*****************\n");
+        p.parent_Does();
+        p.parent_Have();
+        
+        System.out.println("\nChild*****************\n");
+        c.name = "Yaarian Roy";
+        c.age = "22";
+        c.lives_In = "Zurich, Switzerland";
+        c.home_Name = "Santi_Nirr";
+        c.car_name = "Nissan Sentra SR 2020";
+        c.child_Does();
+        c.grandParent_Have();
+        c.parent_Have();
+        c.child_Have();
+    }
+}

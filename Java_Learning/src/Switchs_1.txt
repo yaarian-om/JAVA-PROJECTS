@@ -1,0 +1,12 @@
+If Else if is used while you have multiple conditions, and you have to go through
+with only one.
+Syntax :
+if(condition){
+  // Code
+}else if(condition){
+    // code
+  }else{
+        // Code
+     }
+
+[N:B: Here you can use as much as else if() as you want]

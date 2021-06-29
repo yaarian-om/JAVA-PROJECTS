@@ -1,0 +1,48 @@
+Loop is used to do a same work again and again. And it helps us to code faster.
+It also improves the reusiblity.
+There are 4 types of loops
+of them,
+
+1. For Loop :
+The Java for loop is a control flow statement that iterates a part of the programs multiple times.
+If the number of iteration is fixed, it is recommended to use for loop.
+Syntax :
+for(init;condition;incr/decr){  
+// code to be executed 
+}
+Syntax of infinity loop :
+for(;;){  
+//code to be executed  
+}
+
+2. For-Each Loop :
+For each loop is the upgraded version of for loop, It is mostly used
+with array.
+Syntax :
+for dataType variable: arrayName) {
+    // your Code
+    //System.out.println(variable);
+}
+
+3. While loop :
+The Java while loop is a control flow statement that executes a part of the 
+programs repeatedly on the basis of given boolean condition.
+If the number of iteration is not fixed, it is recommended to use while loop.
+Syntax :
+variable;
+while(condition){  
+//code to be executed
+increment/decrement;
+}
+
+4. Do-While Loop :
+The Java do while loop is a control flow statement that executes a part of the 
+programs at least once and the further execution depends upon the given boolean condition.
+If the number of iteration is not fixed and you must have to execute the loop at least once,
+it is recommended to use the do-while loop.
+Syntax :
+variable;
+do{  
+//code to be executed 
+increment/decrement; 
+}while(condition);

@@ -1,0 +1,62 @@
+class Student extends Person{
+    private String id;
+    public Student(){}
+    public Student(String id){
+        this.id=id;
+    }
+    public void display2(){
+	System.out.println("Inside Student class display-2");
+    }
+	
+    public void display(){
+        System.out.println("Inside display Student");
+    }
+ }
+
+class Person{
+    private String name;
+    private int age; 
+    public Person(){}
+    public Person(String name, int age){
+        this.name=name;
+	this.age=age;
+    }
+    public void display(){
+        System.out.println("inside display Person");
+    }
+    public void display1(){
+        System.out.println("inside display1 Person");
+    }
+ }
+
+public class Behave_Demo{    
+    public static void main(String[] args) {
+        
+        Person p1=new Person("shakib",31);
+        Student s1=new Student();
+        Person p2=new Student();
+        
+        /*
+        Here Display1 is not available in Student so
+        So it will call its own Display1 method
+        */
+        p2.display1();
+        /*
+        Here Display is available in Student so
+        So it will call its Student Display method
+        cause p2 has the object of Student
+        */
+        p2.display();
+        //p2.display2(); // Not Possible
+
+        System.out.println("\n\n\n\n\n\n");
+	    Person p3=new Student();
+	    Student s3=new Student();
+        
+	    s3= (Student)p3; // By this you can access all the methods of all
+	
+    	s3.display2();
+    	s3.display1();
+    	s3.display();
+    }
+}

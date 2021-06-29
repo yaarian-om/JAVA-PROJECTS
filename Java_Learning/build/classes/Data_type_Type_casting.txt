@@ -1,0 +1,16 @@
+Data Type:
+Data types specify the different sizes and values that can be stored in the variable. 
+There are two types of data types in Java:
+
+1.Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+2.Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
+
+Type Casting:
+Type Casting is the process of converting  the value of a primitive data type to another primitive data type. 
+There are two types of types Casting in Java:
+
+1.Implicit Type Casting.
+2.Explicit Type Casting:Converting the value of a larger primitive data type to a smaller primitive data type.
+Possibility of value loss during the conversion exists.
+
+

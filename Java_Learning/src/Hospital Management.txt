@@ -1,0 +1,27 @@
+A software for Hospital Management
+
+1st page :
+input a patient_info
+search a patient_info
+show all patient_info
+search a doctor
+show all doctor
+
+for input patient_info
+input name
+input problem
+input age
+wanna back?
+
+required doc
+bed assigned
+doc room
+payment : show a full bill
+wanna Back?
+
+for search
+input patient name and bed
+input doc name and room
+wanna back?
+
+show all info doc/patient

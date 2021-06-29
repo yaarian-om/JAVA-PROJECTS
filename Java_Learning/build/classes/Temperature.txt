@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Temperature 
+{
+    public static void main(String[] args) 
+    {
+        
+        Scanner input = new Scanner(System.in);
+        double c,f;
+        int x;
+        System.out.println("Press 1 for Celsious to Fahrenheit");
+        System.out.println("Press 2 for Fahrenheit to Celsious");
+        System.out.print("Enter Choice : ");
+        x = input.nextInt();
+        switch(x)
+        {
+            case 1:
+            {
+                System.out.print("Enter Celsius : ");
+                c = input.nextDouble();
+                f= (9.0/5)*c+32;
+                System.out.println("Given Temperature in Fahrenheit is = "+f);
+                break;
+            }
+            case 2:
+            {
+                System.out.print("Enter Fahrenheit : ");
+                f = input.nextDouble();
+                c= (5.0/9)*(f-32);
+                System.out.println("Given Temperature in Celsius is = "+c);
+                break;
+            }
+        }
+        
+    }
+}
