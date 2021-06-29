@@ -1,0 +1,2 @@
+javac HospitalManagement.java
+java HospitalManagement
