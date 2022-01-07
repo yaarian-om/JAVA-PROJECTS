@@ -1,0 +1,14 @@
+Issue Date = 6-JANUARY-2022
+Issue Time = 22:40
+
+                        Name                      Sudipta Kumar Das
+                        Travel Date               7/1/22
+                        Starting From             Dhaka
+                        Destination               Khulna
+                        Train Name                Agnibina Express
+                        Number of Passenger             2
+                        Seats                     B15  B16  
+                        Travel Time               10:00 AM
+                        Train Class               Business Class
+                        Cost                      1000.0
+                        AC/Non-AC                 Non-AC
